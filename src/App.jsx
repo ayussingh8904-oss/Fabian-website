@@ -24,7 +24,7 @@ const App = () => {
   }, []);
   return (
     <>
-  <Hero/>
+     
     </>
   )
 }
