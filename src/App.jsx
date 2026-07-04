@@ -2,9 +2,6 @@ import React from 'react'
 import  { useEffect } from 'react'
 import Lenis from "lenis";
 import Hero from './Components/Hero'
-import {Routes,Route} from 'react-router-dom'
-import Home from './Pages/Home';
-import Navbar from './Components/Navbar';
 const App = () => {
    useEffect(() => {
     const lenis = new Lenis({
@@ -27,10 +24,7 @@ const App = () => {
   }, []);
   return (
     <>
-    <Navbar/>
-     <Routes>
-      <Route path='/' element={<Home/>}/>
-     </Routes>
+ <Hero/>
     </>
   )
 }
